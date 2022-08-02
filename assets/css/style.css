@@ -614,6 +614,173 @@ section {
   padding: 0;
 }
 
+
+/*--------------------------------------------------------------
+# spportfolio
+--------------------------------------------------------------*/
+.spportfolio .spportfolio-item {
+  margin-bottom: 30px;
+}
+
+.spportfolio #spportfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.spportfolio #spportfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.spportfolio #spportfolio-flters li:hover,
+.spportfolio #spportfolio-flters li.filter-active {
+  color: #149ddd;
+}
+
+.spportfolio #spportfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.spportfolio .spportfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.spportfolio .spportfolio-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.spportfolio .spportfolio-wrap .spportfolio-links {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.spportfolio .spportfolio-wrap .spportfolio-links a {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  background: rgba(20, 157, 221, 0.75);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.spportfolio .spportfolio-wrap .spportfolio-links a:hover {
+  background: rgba(20, 157, 221, 0.95);
+}
+
+.spportfolio .spportfolio-wrap .spportfolio-links a+a {
+  border-left: 1px solid #37b3ed;
+}
+
+.spportfolio .spportfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.spportfolio .spportfolio-wrap:hover .spportfolio-links {
+  opacity: 1;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# spportfolio Details
+--------------------------------------------------------------*/
+.spportfolio-details {
+  padding-top: 40px;
+}
+
+.spportfolio-details .spportfolio-details-slider img {
+  width: 100%;
+}
+
+.spportfolio-details .spportfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.spportfolio-details .spportfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #149ddd;
+}
+
+.spportfolio-details .spportfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #149ddd;
+}
+
+.spportfolio-details .spportfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+}
+
+.spportfolio-details .spportfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.spportfolio-details .spportfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.spportfolio-details .spportfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.spportfolio-details .spportfolio-description {
+  padding-top: 30px;
+}
+
+.spportfolio-details .spportfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.spportfolio-details .spportfolio-description p {
+  padding: 0;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
