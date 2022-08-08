@@ -841,6 +841,7 @@ section {
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
+  min-height: 100px;
   margin: 0 auto;
 }
 .testimonials .testimonial-item h3 {
