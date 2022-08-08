@@ -840,7 +840,7 @@ section {
   min-height: 100px;
 }
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  max-width: 100px;
   min-height: 100px;
   margin: 0 auto;
 }
