@@ -1,4 +1,4 @@
-function computeAge(birthday)
+function computeAge(birthday=new Date(1997, 4, 29))
 {
     today = new Date()
     years = today.getFullYear() - birthday.getFullYear()
